@@ -2,9 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -14,30 +14,30 @@
    <children>
       <Pane prefHeight="600.0" prefWidth="570.0" style="-fx-background-color: #0078D7;">
          <children>
-            <Label layoutX="46.0" layoutY="39.0" text="Retiro" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="39.0" text="Registro de cuenta" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
             <Separator layoutX="46.0" layoutY="97.0" prefHeight="0.0" prefWidth="478.0" />
-            <Label layoutX="46.0" layoutY="132.0" text="Selecciona tu cuenta de retiro" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="274.0" text="Ingresa el numero de cuenta" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <MenuButton layoutX="62.0" layoutY="181.0" mnemonicParsing="false" text="Cuenta">
+            <TextField layoutX="46.0" layoutY="322.0" prefHeight="33.0" prefWidth="433.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../Login/src/login/style.css" />
+            <Button layoutX="407.0" layoutY="378.0" mnemonicParsing="false" text="Aceptar" />
+            <Label layoutX="46.0" layoutY="147.0" text="Seleciona el tipo de cuenta" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <SplitMenuButton layoutX="46.0" layoutY="193.0" mnemonicParsing="false" text="Cuenta">
               <items>
-                <MenuItem mnemonicParsing="false" text="Cheques" />
                 <MenuItem mnemonicParsing="false" text="Ahorro" />
+                <MenuItem mnemonicParsing="false" text="Cheques" />
               </items>
-            </MenuButton>
-            <Label layoutX="46.0" layoutY="270.0" text="Ingresa monto a retirar" textFill="WHITE">
-               <font>
-                  <Font size="25.0" />
-               </font>
-            </Label>
-            <TextField layoutX="46.0" layoutY="318.0" prefHeight="33.0" prefWidth="433.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../Login/src/login/style.css" />
-            <Button layoutX="407.0" layoutY="368.0" mnemonicParsing="false" text="Aceptar" />
+            </SplitMenuButton>
          </children>
       </Pane>
       <Label layoutX="553.0" layoutY="-2.0" text="X" textFill="WHITE">

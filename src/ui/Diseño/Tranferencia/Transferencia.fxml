@@ -20,7 +20,7 @@
             <TextField layoutX="45.0" layoutY="191.0" prefHeight="33.0" prefWidth="433.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../Login/src/login/style.css" />
             <Button layoutX="35.0" layoutY="530.0" mnemonicParsing="false" style="-fx-background-color: #EA7200;" text="Salir" />
             <Button layoutX="426.0" layoutY="530.0" mnemonicParsing="false" text="Menu" />
-            <Label layoutX="51.0" layoutY="284.0" text="Ingresa monto a retirar" textFill="WHITE">
+            <Label layoutX="51.0" layoutY="284.0" text="Ingresa monto a transferir" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
