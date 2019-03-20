@@ -2,8 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -12,22 +13,25 @@
    <children>
       <Pane prefHeight="600.0" prefWidth="570.0" style="-fx-background-color: #0078D7;">
          <children>
-            <Label layoutX="46.0" layoutY="39.0" text="Consulta de saldo" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="39.0" text="Pago de telefono" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
             <Separator layoutX="46.0" layoutY="97.0" prefHeight="0.0" prefWidth="478.0" />
-            <Label layoutX="46.0" layoutY="132.0" text="Tu saldo es:" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="179.0" text="Selecciona tu Proveedor" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField layoutX="82.0" layoutY="236.0" prefHeight="103.0" prefWidth="407.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 50;" styleClass="text-input" stylesheets="@style.css">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </TextField>
+            <MenuButton layoutX="62.0" layoutY="236.0" mnemonicParsing="false" text="Telefonia">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Telmex" />
+                  <MenuItem mnemonicParsing="false" text="Telcel" />
+                  <MenuItem mnemonicParsing="false" text="At&amp;t" />
+                  <MenuItem mnemonicParsing="false" text="Movistar" />
+               </items>
+            </MenuButton>
          </children>
       </Pane>
       <Label layoutX="553.0" layoutY="-2.0" text="X" textFill="WHITE">

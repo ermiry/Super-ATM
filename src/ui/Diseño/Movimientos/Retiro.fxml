@@ -2,32 +2,42 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="570.0" style="-fx-background-color: #0078D7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane prefHeight="600.0" prefWidth="570.0" style="-fx-background-color: #0078D7;">
          <children>
-            <Label layoutX="46.0" layoutY="39.0" text="Consulta de saldo" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="39.0" text="Retiro" textFill="WHITE">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
             <Separator layoutX="46.0" layoutY="97.0" prefHeight="0.0" prefWidth="478.0" />
-            <Label layoutX="46.0" layoutY="132.0" text="Tu saldo es:" textFill="WHITE">
+            <Label layoutX="46.0" layoutY="132.0" text="Selecciona tu cuenta de retiro" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField layoutX="82.0" layoutY="236.0" prefHeight="103.0" prefWidth="407.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 50;" styleClass="text-input" stylesheets="@style.css">
+            <MenuButton layoutX="62.0" layoutY="181.0" mnemonicParsing="false" text="Cuenta">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Cheques" />
+                <MenuItem mnemonicParsing="false" text="Ahorro" />
+              </items>
+            </MenuButton>
+            <Label layoutX="46.0" layoutY="270.0" text="Ingresa monto a retirar" textFill="WHITE">
                <font>
-                  <Font size="30.0" />
+                  <Font size="25.0" />
                </font>
-            </TextField>
+            </Label>
+            <TextField layoutX="46.0" layoutY="318.0" prefHeight="33.0" prefWidth="433.0" style="-fx-border-color: #ffffff; -fx-background-color: #0078D7; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../Login/src/login/style.css" />
          </children>
       </Pane>
       <Label layoutX="553.0" layoutY="-2.0" text="X" textFill="WHITE">
